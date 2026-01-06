@@ -19,7 +19,7 @@ app.use(express.json());   // ✅ Correctly parsing JSON request bodies
 // app.use(cors());
 app.use(cors({
     origin:['http://localhost:5173',
-    'https://mda-learning-mnyb.vercel.app/'],
+    'https://mda-learning-mnyb.vercel.app'],
     credentials:true
 }))
 
