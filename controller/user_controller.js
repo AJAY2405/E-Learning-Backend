@@ -73,6 +73,9 @@ export const registerUser = async (req, res) => {
 export const verification = async (req, res) => {
   try {
     const authHeader = req.headers.authorization;
+    //  console.log("Body:", req.body);
+    // console.log("Params:", req.params);
+    // console.log("Authorization:", req.headers.authorization);
     if (!authHeader || !authHeader.startsWith("Bearer ")) {
       return res.status(401).json({
         success: false,
@@ -196,8 +199,8 @@ export const loginUser = async (req, res) => {
   }
 };
 
-/**
- * Logout User
+/*
+Logout User
  */
 export const logoutUser = async (req, res) => {
   try {
@@ -216,7 +219,7 @@ export const logoutUser = async (req, res) => {
   }
 };
 
-/**
+/*
  * Forgot Password - Send OTP
  */
 export const forgotPassword = async (req, res) => {
