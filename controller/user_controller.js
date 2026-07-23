@@ -11,8 +11,9 @@ import cloudinary from "../utils/cloudinary.js";
  * Register User
  */
 export const registerUser = async (req, res) => {
-  // console.log("Request Body", req.body);
+  console.log("Request Body", req.body);
   try {
+    console.log("Request Body", req.body);
     const { username, email, password,role} = req.body;
 
     if (!username || !email || !password) {

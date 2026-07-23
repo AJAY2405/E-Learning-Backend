@@ -32,6 +32,7 @@
     "react-simple-typewriter": "^5.0.1",
     "recharts": "^3.2.1",
     "redux": "^5.0.1",
+    "resend": "^6.17.2",
     "yup": "^1.7.0"
   },
   "devDependencies": {
